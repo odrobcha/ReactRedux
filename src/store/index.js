@@ -6,6 +6,4 @@ const store = configureStore({
     reducer: {counter : counterReducer, auth: authReducer}   // will automatically merge to one reducer
 });
 
-
-
 export default store;

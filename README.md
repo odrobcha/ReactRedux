@@ -15,13 +15,15 @@
 
     const initialAuthState = {
         isAuthenticated : false,
+        use:''
     }
     const authSlice = createSlice( {
      name : 'authentication',
      initialState : initialAuthState,
         reducers : {
-        login(state){
+        login(state, action){
             state.isAuthenticated = true;
+            state.user = action.payload //OBLIGATORY name payload
         },
         logout(state){
             state.isAuthenticated = false;
@@ -37,4 +39,4 @@
 
   const dispatch = useDispatch();
     - to dispatch action - dispatch(authActions.login(payload))
-    - to   get data fron dedux -  const counter = useSelector(state => state.counter.counter);
+    - to   get data from redux -  const counter = useSelector(state => state.counter.counter);

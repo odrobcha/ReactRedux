@@ -12,7 +12,7 @@ const Counter = () => {
         dispatch(counterActions.increment())
     };
     const increaseHandler = () =>{
-        dispatch(counterActions.increase({value: 10})) // === {type : SOME_UNIQUE_IDENTOFIER, payload: 10} payload is given name
+        dispatch(counterActions.increase({value: 10})) // === {type : SOME_UNIQUE_IDENTOFIER, payload: 10} payload is given default name
     }
     const decrementHandler = () => {
         dispatch(counterActions.decrement())

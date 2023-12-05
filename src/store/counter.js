@@ -23,5 +23,5 @@ const counterSlice = createSlice({
     }
 });
 
-export const counterActions = counterSlice.actions;
+export const counterActions = counterSlice.actions;  //to have access  to all reducer from outside
 export default counterSlice.reducer;
