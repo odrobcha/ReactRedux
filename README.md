@@ -15,7 +15,7 @@
 
     const initialAuthState = {
         isAuthenticated : false,
-        use:''
+        user:''
     }
     const authSlice = createSlice( {
      name : 'authentication',
@@ -39,4 +39,4 @@
 
   const dispatch = useDispatch();
     - to dispatch action - dispatch(authActions.login(payload))
-    - to   get data from redux -  const counter = useSelector(state => state.counter.counter);
+    - to   get data from redux -  const counter = useSelector(state => state.authentication.isAuthenticated);
